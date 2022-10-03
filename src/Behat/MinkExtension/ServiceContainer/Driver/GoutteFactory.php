@@ -126,6 +126,6 @@ class GoutteFactory implements DriverFactory
     private function isGuzzle6()
     {
         return interface_exists('GuzzleHttp\ClientInterface') &&
-            version_compare(\GuzzleHttp\ClientInterface::VERSION, '6.0.0', '>=');
+            version_compare(\GuzzleHttp\ClientInterface::MAJOR_VERSION, '6.0.0', '>=');
     }
 }
